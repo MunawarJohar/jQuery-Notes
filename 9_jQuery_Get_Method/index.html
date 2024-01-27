@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Method </title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Get Method in jQuery</h1>
+    <div class="box Box" id="test1">
+        <h1>Box Dev</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia quasi expedita fssimus eum dolor. Iure adipisci voluptates esse cupiditate sunt nostrum! .
+        </p>
+
+    </div>
+    <h1>Form</h1>
+    <form action="" id="sform">
+        <label for="Name">Name<input type="text" id="sname"></label> <br>
+        <label for="class">Class <input type="text" id="sclass"></label> <br>
+
+        <label for="">Country</label>
+        <select id="scountry">
+    <option value="India">India</option>
+    <option value="Pakistan">Pakistan</option>
+    <option value="Bagladesh">Bangladesh</option>
+    <option value="Nepal">Nepal</option>
+    
+    </select><input type="submit" name="" id="fsubmit">
+
+
+
+
+    </form>
+
+    <script>
+        $(document).ready(function() {
+            let a = $('#test1').html();
+            console.log(a);
+            let b = $('#test1 p').html();
+            console.log(b);
+
+            let c = $('#test1').text();
+            console.log(c);
+
+            // return box and Box class
+            let att = $('#test1').attr('class');
+            console.log(att);
+
+            $('#fsubmit').submit(function() {
+                let = values = $('sname').val();
+                alert("Hello" + values);
+            });
+        })
+    </script>
+</body>
+
+</html>

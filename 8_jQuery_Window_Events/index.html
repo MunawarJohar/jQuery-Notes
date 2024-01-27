@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Events </title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Window Events in jQuery</h1>
+    <div class="box" id="test1">
+        <h1>Box Dev</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia quasi expedita facere voluptate distinctio asperiores, fuga exercitationem ex, repellendus ab beatae ducimus soluta id, laudantium libero quas odio delectus dolorum reiciendis.
+            Eveniet sed vel est, ipsam fugiat nam repellat blanditiis nulla laudantium officia mollitia ipsa qui laboriosam quo aperiam cum error ex asperiores quam magnam unde soluta nostrum dolor atque. Et nisi ipsa iusto nesciunt in vel qui accusamus
+            deserunt? Amet exercitationem earum, eum eveniet ratione error assumenda soluta maxime tenetur maiores incidunt autem commodi cumque dolorem ad obcaecati qui quod odit repellendus ex nisi, laborum tempore voluptates. Praesentium enim eum velit
+            quis eligendi voluptas ipsam! Quisquam ratione, dolorum rerum veritatis dolore modi, aliquid eaque officiis quam consectetur repellendus corporis consequatur dolorem amet possimus eum dolor. Iure adipisci voluptates esse cupiditate sunt nostrum!
+            Cupiditate excepturi, dolorem, iusto, earum delectus itaque consequuntur quasi ab reiciendis quod reprehenderit. Aliquam magni amet eius delectus. Nobis enim laborum, culpa ducimus cumque modi, corporis numquam harum minima excepturi temporibus
+            perferendis minus reprehenderit debitis architecto. Sunt assumenda obcaecati qui corporis fuga odio illo repudiandae quas asperiores, nulla rem possimus, iure nemo libero recusandae officiis sint molestias rerum temporibus adipisci quidem
+            voluptatem! Ipsam libero expedita dolor explicabo iusto officiis sequi aperiam, nihil facilis! Ut odio animi repellendus rem facere officiis fuga aspernatur praesentium recusandae placeat aperiam eos laboriosam repellat dicta et illum, eum
+            nesciunt vel sunt quaerat iure sint. Sunt nam laboriosam quaerat iusto, atque autem sint aut commodi nisi est illum fugit aperiam animi placeat possimus natus! Hic in quae numquam exercitationem cum molestias saepe, rerum repudiandae, inventore
+            aperiam accusantium sequi praesentium nesciunt quaerat a. Quis, et magnam aliquid tempore esse libero! Recusandae molestiae laboriosam dolore numquam beatae, voluptatibus nesciunt nihil cupiditate sit deleniti, eaque aspernatur necessitatibus.
+            Voluptates, aliquam. Vitae quidem necessitatibus natus tenetur! Maiores, quaerat aut, veritatis obcaecati pariatur dolore vitae quia possimus accusantium rerum eum quasi ducimus voluptatibus sapiente iste eius repellendus. Vel molestias dignissimos
+            facere omnis assumenda quia eum eligendi voluptate ut quae accusamus atque iure voluptas, possimus debitis illo temporibus praesentium. Voluptas fuga aliquid, rem molestiae nesciunt deleniti odit illo quia porro, quo nulla maiores dolorem
+            consequatur laborum ipsam ut esse omnis veritatis aperiam asperiores nisi eius totam distinctio. Maxime fuga ex repudiandae provident odio ad debitis. Autem, perferendis quos.</p>
+
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam saepe eaque, harum maxime quo sapiente tempora distinctio a. Aliquid est temporibus et repellat animi, nostrum cumque enim alias molestias cupiditate eum quam earum sunt iure voluptatibus,
+        eligendi nisi libero veniam aspernatur quisquam officiis ex deserunt fuga veritatis. Cum unde cupiditate possimus adipisci velit laboriosam dolores blanditiis. Quis, perferendis distinctio eum deleniti placeat cumque voluptate? Sed voluptas quo
+        blanditiis tenetur quisquam dignissimos iusto fugiat consequatur eveniet culpa nihil, praesentium nobis, quia, rem impedit autem accusantium sapiente eligendi ratione consequuntur veritatis veniam accusamus dolorum beatae! Dolorum consequatur
+        voluptates ab, porro ratione quis, rem quasi praesentium, ea soluta facilis velit? Iure accusamus dignissimos eos itaque rem, nihil cum magni inventore provident placeat facilis assumenda. Facilis culpa debitis excepturi asperiores repellendus
+        doloremque, rerum et deleniti perspiciatis eveniet aliquid perferendis, tempore quisquam odit molestiae laboriosam, nostrum libero vel quasi iste! Quisquam harum voluptatem itaque quo eveniet quidem modi aperiam est, ut reprehenderit. Libero quasi
+        alias quisquam, fugit saepe magnam ex doloremque officia blanditiis at numquam minus quibusdam aperiam ipsam unde! Fuga, commodi aut numquam, error aliquam odit sapiente quisquam itaque consequatur doloremque voluptas tempore pariatur hic, sit
+        molestias cupiditate excepturi officiis! Impedit, dolores doloribus cum, ea numquam consequuntur assumenda et odio nulla, dolore repudiandae id culpa ipsa facere harum velit! Nostrum natus repellat culpa tenetur quia harum ex ducimus nihil sint
+        asperiores odio inventore repellendus obcaecati maxime, earum possimus. Saepe consectetur amet sint neque cum, placeat fuga, perspiciatis voluptatem in voluptate dignissimos. Eligendi vel temporibus provident explicabo possimus amet quis a perferendis
+        reprehenderit veritatis dolorum et optio, laboriosam quia maxime cupiditate illo repellendus placeat, accusamus adipisci omnis maiores cumque consectetur. Voluptatum cumque unde modi distinctio quos assumenda autem iste error eos laboriosam consectetur
+        velit odio impedit temporibus quaerat dicta tenetur magnam, sint, similique nemo, iusto expedita. Cupiditate pariatur officiis ipsa consectetur, assumenda quaerat perferendis minus iste eum nemo, excepturi perspiciatis ratione, recusandae tempore
+        eaque fuga in. Libero ad nobis soluta! Odio officiis fugit iste error eaque. Facilis id eius amet ratione quidem, animi, eligendi officia, voluptatibus molestiae quo enim corporis. Cumque quod corrupti, necessitatibus incidunt repellat facere
+        velit recusandae ipsum nihil minima voluptatum vitae quis ab sed tempora consequuntur praesentium dolore fugit doloribus et inventore adipisci reprehenderit numquam. Omnis adipisci rem incidunt id fugit officiis esse recusandae est non ex, quisquam
+        commodi eos deserunt iure ullam necessitatibus culpa possimus. Soluta non magnam quaerat iste officiis optio neque ipsa amet consequuntur accusantium ut dolorum, assumenda reprehenderit cum. Dolorum, iste repellendus, culpa atque veritatis voluptates
+        necessitatibus voluptatibus ipsa tenetur reprehenderit inventore maxime, reiciendis quos obcaecati a tempora. Vel aspernatur commodi cum consequatur quam, perspiciatis autem eligendi quia, est culpa nihil nesciunt sint. Amet est nisi id aspernatur
+        excepturi soluta ex modi repudiandae dolores laborum consequatur officiis ab, voluptas nostrum voluptatem voluptate itaque possimus vel! Modi, fuga sequi? Repudiandae, cupiditate enim nam voluptate harum qui magnam pariatur eveniet consequuntur
+        maiores voluptatem ratione. At sit repellendus inventore itaque doloremque corporis maxime ad nemo voluptate cupiditate. Voluptas minima blanditiis illum.</p>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                console.log("Scrolling");
+            });
+            $('#test1').scroll(function() {
+                console.log("Scrolling");
+            });
+
+            $(window).resize(function() {
+                console.log("Reszing the window");
+            });
+            /*
+                        // window load and unload event remove from jQuery 3.1 and this cannot work
+                        $(window).load(function() {
+                            console.log("loading window");
+                        });
+                        $(window).unload(function() {
+                            console.log("unloading window");
+                        });
+                        */
+        });
+    </script>
+</body>
+
+</html>

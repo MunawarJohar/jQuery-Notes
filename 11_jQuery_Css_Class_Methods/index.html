@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Class Method </title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        /*
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+        }
+        */
+        
+        .bg_green {
+            background-color: green;
+        }
+        
+        .bg_red {
+            background-color: red;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1 class="bg_red " id="heading">Css class Method in jQuery</h1>
+    <div class="box " id="test1">
+        <h1>Box Dev</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia quasi expedita fssimus eum dolor. Iure adipisci voluptates esse cupiditate sunt nostrum! .
+        </p>
+
+    </div>
+
+
+    <button id="btnAdd">Add Now</button>
+    <button id="btnRemove">Remove Now</button>
+    <button id="btnToggle">Toggle Now</button>
+
+    <div class="box2" id="test2">
+        <h2>I am box 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, veniam accusamus ex beatae architecto reiciendis.
+        </p>
+    </div>
+    <button id="btnStyle">Add style</button>
+    <script>
+        $(document).ready(function() {
+            $('#btnAdd').click(function() {
+                $('#test1').addClass("bg_green");
+            });
+            $('#btnRemove').click(function() {
+                $('#heading').removeClass("bg_red");
+            });
+            $('#btnToggle').click(function() {
+                $('#test1').toggleClass("bg_red");
+            });
+
+            // css method
+            $('#btnStyle').click(function() {
+                $('#test2').css("background", "pink");
+                $('#test2').css({
+                    "border": "2px solid black",
+                    "color": "red"
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>

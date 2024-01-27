@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Events </title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        
+        #test2 {
+            background-color: green;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Form Events in jQuery</h1>
+    <form action="" id="sform">
+        <label for="Name">Name<input type="text" id="sname"></label> <br>
+        <label for="class">Class <input type="text" id="sclass"></label> <br>
+
+        <label for="">Country</label>
+        <select id="scountry">
+    <option value="India">India</option>
+    <option value="Pakistan">Pakistan</option>
+    <option value="Bagladesh">Bangladesh</option>
+    <option value="Nepal">Nepal</option>
+    <br><br>
+    <input type="submit" name="" id="fsubmit">
+</select>
+
+
+
+    </form>
+
+
+    <script>
+        $(document).ready(function() {
+
+            $('#sname,#scountry').focus(function() {
+                $('#sanme,#scountry').css('background-color', '#cccccc');
+            });
+
+
+            $('#sname,#scountry').blur(function() {
+                $('#sanme,#scountry').css('background-color', '#cccccc');
+            });
+
+            $('#scountry').change(function() {
+                $('#scountry').css('background-color', 'pink');
+            });
+
+
+            $('#sname').select(function() {
+                $('#sname').css('background-color', 'pink');
+            });
+
+
+            $('#fsubmit').submit(function() {
+                alert("Your form is Successfully submitted");
+            });
+        });
+    </script>
+</body>
+
+</html>

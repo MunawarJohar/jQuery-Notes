@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Syntax </title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        
+        #test2 {
+            background-color: green;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Selectors in jQuery</h1>
+    <div id="test1" class="box">
+        <h1>Test Box 1</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, error.</p>
+    </div>
+    <ul id="list">
+        <li>Karachi</li>
+        <li>Lahore</li>
+        <li>Islamabad</li>
+        <li>Skardu</li>
+        <li>Multan</li>
+    </ul>
+
+    <script>
+        $(document).ready(function() {
+
+            $('#list').css("color", "green");
+            $('#list li').css("border", "2px solid red");
+            $('*').css("margin", "0");
+            $('li:first-child').css("color", "black");
+            $('ul li:eq(1)').css("color", "red");
+            $('ul li:gt(2)').css("color", "purple"); //gt  greater to  // lt lower to 
+        });
+    </script>
+</body>
+
+</html>

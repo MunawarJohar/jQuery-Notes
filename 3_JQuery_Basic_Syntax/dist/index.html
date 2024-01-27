@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Syntax </title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #test1 {
+            background-color: aqua;
+        }
+        
+        #test2 {
+            background-color: green;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <div id="test1" class="box">
+        <h1>Test Box 1</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, error.</p>
+    </div>
+    <div id="test2" class="box">
+        <h1>Test Box 2</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, error.</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // console.log("Hello");
+            let a = $('#test1').html();
+            console.log(a);
+            let b = $('#test2').html();
+            console.log(b);
+        });
+    </script>
+</body>
+
+</html>
