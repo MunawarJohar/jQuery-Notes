@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrap and Unwrap Method in jQuery</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+        }
+        
+        #box {
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1> Wrap and Unwrap Method in jQuery</h1>
+    <div class="box" id="test1">
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia quasi expedita fssimus eum dolor. Iure adipisci voluptates esse cupiditate sunt nostrum! .
+        </p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia quasi expedita fssimus eum dolor. Iure adipisci voluptates esse cupiditate sunt nostrum! .
+        </p>
+
+      
+
+    </div>
+
+    <button id="btnWrap">Wrap</button>
+    <button id="btnUnwrap">Unwrap</button>
+
+    <button id="btnWrapAll">Wrap All</button>
+    <button id="btnWrapInner">Wrap inner</button>
+
+
+    <script>
+        $(document).ready(function() {
+            $('btnWrap').click(function(){
+                $('#test1 p').wrap('<h1></h1>');
+            });
+            $('btnUnwrap').click(function(){
+                $('#test1 p').wrap();
+            });
+
+    // Wrap all and Wrap inner
+    $('btnWrapAll').click(function(){
+        $('#test1 p').wrapAll('<div id="box"></div>');
+    });
+
+    $('btnWrapInner').click(function(){
+        $('h1').wrap('<h1 class="green"></h1>');
+    });
+        });
+    </script>
+</body>
+
+</html>

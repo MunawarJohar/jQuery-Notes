@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensions Method in jQuery</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+            border: 5px solid black;
+            margin: 10px 10px;
+        }
+        
+        #box {
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Dimensions Method in jQuery</h1>
+    <div class="box" id="test1">
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia quasi expedita fssimus eum dolor. Iure adipisci voluptates esse cupiditate sunt nostrum! .
+        </p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia quasi expedita fssimus eum dolor. Iure adipisci voluptates esse cupiditate sunt nostrum! .
+        </p>
+
+      
+
+    </div>
+
+    <button id="btnWidth">Width</button>
+    <button id="btnHight">Hight</button>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $('#btnWidth').click(function(){
+             console.log("Width is: "+$('#test1').width());
+             console.log("inner Width is: "+$('#test1').innerWidth());
+             console.log("Outer Width is: "+$('#test1').outerWidth());
+             console.log("Outer Width true is: "+$('#test1').outerWidth(true));
+            });
+
+
+            $('#btnHight').click(function(){
+                            
+                                //set Height
+                                $('#test1').height('400px');
+
+                                // Get height
+                console.log("Height is: "+$('#test1').height());
+                console.log("inner Height is: "+$('#test1').innerHeight());
+                console.log("Outer Height is: "+$('#test1').outerHeight());
+                console.log("Outer Height true is: "+$('#test1').outerHeight(true));
+               });
+        });
+    </script>
+</body>
+
+</html>

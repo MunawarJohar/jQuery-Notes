@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppendTo and PrependTo Method in jQuery</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+        }
+        
+        .bg_red {
+            background-color: red;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1> AppendTo and PrependTo Method in jQuery</h1>
+    <div class="box Box" id="test1">
+        <h1>Box Dev</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia quasi expedita fssimus eum dolor. Iure adipisci voluptates esse cupiditate sunt nostrum! .
+        </p>
+
+    </div>
+
+    <button id="btnAppendTo">AppendTo</button>
+    <button id="btnPrependTo">PrependTo</button>
+
+    <script>
+        $(document).ready(function() {
+            $('#btnAppendTo').click(function() {
+                $('<h5>AppendTo : I am Appendto</h5>').appendTo('#test1');
+            })
+            $('#btnPrependTo').click(function() {
+                $('<h5>PrependTo : I am Preprento</h5>').prependTo('#test1');
+            })
+
+
+
+        });
+    </script>
+</body>
+
+</html>

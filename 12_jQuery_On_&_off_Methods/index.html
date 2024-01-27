@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On & Off Method </title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        /*    #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+        }
+        
+*/
+        
+        .bg_red {
+            background-color: red;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1>On & Off Method in jQuery</h1>
+    <div class="box Box" id="test1">
+        <h1>Box Dev</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia quasi expedita fssimus eum dolor. Iure adipisci voluptates esse cupiditate sunt nostrum! .
+        </p>
+
+    </div>
+
+
+    <button id="btn">Off Event</button>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#test1').on("mouseover mouseout", function() {
+                $('#test1').toggleClass("bg_red");
+            });
+
+            // for multipe 
+            $('#test1').on({
+                "click": function() {
+                    $('#test1').css("color", "red");
+
+                },
+                "mouseover": function() {
+                    $('#test1').css("color", "black");
+                },
+                "mouseout": function() {
+                    $('#test1').css("background", "pink");
+                }
+            });
+
+            $('#test1').click("mouseover mouseout", function() {
+                $('#test1').off("bg_red");
+            });
+        });
+    </script>
+</body>
+
+</html>

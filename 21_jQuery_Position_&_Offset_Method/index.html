@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postion and Offset Method in jQuery</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+            border: 1px solid black;
+            margin: 10px 10px;
+        }
+        
+        #box {
+            background-color: red;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Postion and Offset Method in jQuery</h1>
+    <div class="box" id="test1">
+
+        <h1>Postion and Offset Method in jQuery</h1>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia quasi expedita fssimus eum dolor. Iure adipisci voluptates esse cupiditate sunt nostrum! .
+        </p>
+
+      
+
+    </div>
+
+    <button id="btnPosition">Position</button>
+    <button id="btnOffset">Offset</button>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $('#btnPosition').click(function(){
+         console.log("The position is "+       $('#test1 h1').position());
+
+         let x=$('#test1 h1').position();
+         console.log("Top "+x.top+" Left :"+x.left);
+            });
+
+
+
+            $('#btnOffset').click(function(){
+                console.log("The Offset is "+       $('#test1 h1').offset());
+                let x=$('#test1 h1').offset();
+                console.log("Top "+x.top+" Left :"+x.left);   
+                
+                //set test 1 position
+                $('#test1 ').offset({top:0,left:0});
+            
+            });
+       
+
+        });
+    </script>
+</body>
+
+</html>
