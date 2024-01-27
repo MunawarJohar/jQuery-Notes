@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Which Property in jQuery</title>
+    <style>
+        #test1 {
+            width: 300px;
+            height: 100px;
+
+        }
+
+        #box {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1> Event Which Property in jQuery</h1>
+    <div id="box"></div>
+    <input type="text" id="test1">
+    <br>
+    <h2></h2>
+
+
+    <h2></h2>
+
+    <script>
+        $(document).ready(function () {
+            $('#box').on("Mouseover mouseout mousedown", function (event) {
+                $('h2').html(event.type + ":" + event.which);
+            });
+            $('#test1').on("keydown",function(event){
+                $('h2').html(event.type + ":" + event.which);
+            })
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> jQuery PlugIn</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+            position: relative;
+        }
+        body{
+            font-family: arail;
+        }
+        h1{
+            font-size: 35px;
+            text-align: center;
+        }
+        #scrollUp {
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #2f0988;
+            color: #fff;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery.scrollUp.min.js"></script>
+</head>
+
+<body>
+
+    <h1>jQuery Plugin </h1>
+    <div  id="test1">
+        <h1>Box </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi impedit excepturi nemo, ex quo placeat.</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, expedita.
+        </p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam possimus assumenda ipsam eius atque?
+            Ducimus quisquam in voluptatem illum explicabo sapiente porro tempora pariatur necessitatibus iure soluta
+            reprehenderit, corporis placeat sequi nihil molestiae minima esse similique. Numquam, officia laboriosam
+            inventore fuga doloremque voluptas, dignissimos molestiae optio ullam quia nisi voluptates necessitatibus
+            ab. Nesciunt aliquam atque nobis nisi, quas reprehenderit commodi ratione assumenda ex corporis voluptatibus
+            consectetur nam explicabo. Commodi, totam ratione recusandae dolor repudiandae eos voluptate omnis ut
+            accusamus eius animi consequatur tenetur veritatis dolorem tempore reprehenderit doloribus aut magnam vero
+            perspiciatis cum. Minima laborum dignissimos aperiam voluptatibus officiis ipsum corrupti tempore. Molestiae
+            suscipit fugit tempora, consequatur dolor repellat natus mollitia recusandae officia dolore eveniet beatae
+            reprehenderit quibusdam quisquam vero qui voluptates est provident omnis nesciunt debitis! Voluptatum
+            tempora ut quod quae minima ad, ullam assumenda deleniti corporis laboriosam molestiae delectus aliquid
+            adipisci dolorem mollitia illum aliquam iste dolorum quidem doloribus ipsum recusandae expedita? Voluptatum
+            amet obcaecati, quo fugit modi totam porro, nemo, ut eligendi ipsam quia. Perferendis magni labore, ducimus
+            quibusdam quisquam id commodi non vel qui iure consequatur est error, nobis eum quos rerum, necessitatibus
+            nihil totam cum quas laborum omnis eius eligendi! Repellat quasi eum, incidunt reiciendis beatae ut quisquam
+            ipsa accusantium distinctio dolore animi ab, hic minima, temporibus excepturi praesentium quos magnam ex
+            unde repellendus placeat natus nostrum? Inventore, hic atque fugiat temporibus architecto excepturi, odio,
+            fugit voluptas corrupti tempore debitis qui sint. Culpa possimus porro architecto delectus quas minima
+            officia dignissimos dolorum, voluptatem est dolor perspiciatis distinctio maxime amet iure error
+            reprehenderit magnam inventore numquam cupiditate aliquam ea? Atque soluta eos necessitatibus praesentium
+            quo nam dolorem cumque? Obcaecati sunt reiciendis assumenda ex! Debitis aspernatur, excepturi corporis nemo
+            fuga sit ullam, delectus similique vel consectetur consequuntur quia saepe quo dolorum voluptatibus ipsam,
+            laboriosam et unde? Modi incidunt consequuntur deserunt, adipisci mollitia quam natus doloribus accusamus
+            possimus harum magnam, fuga tempora quas dignissimos quo aliquam cum earum. Voluptatum iste nam repudiandae
+            corrupti dolorem itaque, natus voluptas, saepe a consequuntur sed et laborum vel autem sint aperiam optio ea
+            magni aliquid earum suscipit harum est quas. Quam perspiciatis quibusdam, praesentium, voluptates eius
+            pariatur ex dolor labore consequatur asperiores architecto officiis recusandae ullam nesciunt, commodi est!
+            Magni eius ipsum incidunt, odit dicta mollitia facere ullam, modi odio id laboriosam accusantium tempora
+            illum iusto repudiandae blanditiis esse. Tenetur quidem incidunt aliquid veniam optio ipsa atque? Maiores
+            doloremque totam veniam molestias iste inventore ipsa accusamus voluptate cumque minima ratione sequi ab
+            itaque, voluptates quis impedit. Iure facilis aliquid quibusdam quis repellendus quae tenetur debitis,
+            veritatis dolorum fuga error sunt in distinctio voluptatum at tempore? Commodi aliquid impedit omnis
+            corporis eos, nostrum consequuntur? Quibusdam accusantium impedit maxime repudiandae culpa dolore molestiae
+            laborum itaque, tempore, voluptatibus ipsum omnis quaerat suscipit, est voluptate numquam totam ipsam! Id,
+            dignissimos consequatur rerum asperiores aliquam distinctio repudiandae quas a temporibus expedita ullam
+            ipsa libero esse ducimus fugiat ratione debitis molestiae aspernatur. Cum, expedita. Ducimus numquam
+            pariatur aliquid praesentium ut saepe quis quos fuga illo, repudiandae velit sint in. Fugit, quos
+            voluptates? At maxime esse fugiat temporibus eum, corrupti iure cupiditate nobis itaque praesentium tempore
+            tenetur, beatae corporis officiis officia quas. Magni aut mollitia laborum? Quidem maxime delectus
+            recusandae fugiat ut possimus odit culpa eveniet doloremque, incidunt officia est laborum nostrum optio!
+            Nemo, explicabo? Quae eaque quas placeat, iste praesentium dolorem error molestias, assumenda qui sit at cum
+            fugit aspernatur facilis, numquam vel? Ullam laboriosam amet temporibus architecto. Dolor necessitatibus
+            consequuntur libero, esse cum quam doloremque. Debitis velit quasi, minima nulla, eaque enim alias odit
+            veniam eos delectus mollitia nihil molestiae. Nemo dignissimos consectetur dolorem quod et modi, alias id
+            officia blanditiis magni voluptates maiores explicabo ipsa, nisi voluptatibus impedit perferendis sunt!
+            Provident recusandae saepe quia. Commodi consequatur quasi assumenda accusamus fugiat quas velit dignissimos
+            at, culpa quaerat eveniet natus excepturi quae molestiae officia quod consequuntur. In saepe vel ab quisquam
+            sapiente dignissimos, ex molestiae veniam quod praesentium voluptate? Reprehenderit fugit consequuntur
+            voluptatibus, atque expedita ad obcaecati assumenda et soluta odio consectetur dolorum labore repellendus
+            cum, voluptatem numquam voluptates maiores modi esse ea asperiores deserunt a repellat! Dignissimos
+            laudantium distinctio similique suscipit quam eius quibusdam ut laboriosam, veniam perspiciatis nulla!
+            Placeat illo rem amet et quis porro veniam vero inventore, soluta eos quo fugiat laborum tempore deserunt
+            tempora natus laudantium nesciunt? Possimus repellat aliquam fuga illo odio labore iusto eum. Asperiores
+            suscipit consequatur eveniet nulla facilis? Illum doloremque enim labore vel possimus nesciunt
+            exercitationem mollitia, delectus, numquam, dolore ducimus? A quaerat voluptas repudiandae repellendus in
+            praesentium odit, ad vitae ut magni, exercitationem labore. Magni voluptate, et corrupti dicta quidem nobis
+            quae rerum dignissimos sequi recusandae. Consequatur ducimus mollitia atque officia aspernatur repellendus.
+            Odio quasi dolorem aliquam, voluptatibus sed magnam laborum similique, inventore natus mollitia accusantium
+            dolores quaerat totam recusandae nostrum fuga eius placeat obcaecati hic error architecto soluta animi? Hic
+            quam, iste velit dolores deserunt a explicabo iure culpa autem ex nulla error maxime illum esse, nobis
+            dignissimos ea voluptates fuga molestias quae repudiandae, vitae veniam quo accusamus. Aut vel cupiditate
+            rerum quod! Commodi, doloribus libero alias facere fugit accusamus, repellendus iusto tenetur consequuntur
+            aperiam possimus sed eligendi eveniet, dicta soluta illo sequi error odit! Quo ipsa dolores voluptas eum sed
+            perferendis excepturi, laborum nobis quaerat nostrum. Modi cumque adipisci voluptatibus ex quam, perferendis
+            iusto quis dolores. Iure quod odit nobis nostrum placeat? Illo quod minus aspernatur rem repellat cupiditate
+            quas dolor? Quos dolor tenetur architecto non. Magnam!</p>
+    </div>
+
+
+    <script>
+        $(function () {
+            $.scrollUp({
+                scrollName: 'scrollUp',      // Element ID
+                scrollDistance: 50,         // Distance from top/bottom before showing element (px)
+                scrollFrom: 'top',           // 'top' or 'bottom'
+                scrollSpeed: 1000,            // Speed back to top (ms)
+                easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+                animation: 'fade',           // Fade, slide, none
+                animationSpeed: 200,         // Animation speed (ms)
+                scrollText: 'Scroll Know', // Text for element, can contain HTML
+                scrollTitle: false,          // Set a custom <a> title if required.
+                scrollImg: false,            // Set true to use image
+                activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+                zIndex: 2147483647           // Z-Index for the overlay
+            });
+        });
+    </script>
+</body>
+
+</html>
