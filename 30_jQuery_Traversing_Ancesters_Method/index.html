@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancestors Traversing in jQuery</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+
+        .box2 {
+            width: 400px;
+            height: 400px;
+            background-color: greenyellow;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            background-color: blueviolet;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .boxes {
+            width: 50px;
+            height: 50px;
+            background-color: aliceblue;
+            margin: 10px;
+        }
+
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+            position: relative;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1> Ancestors Traversing in jQuery</h1>
+    <div class="box" id="test1" style="position:relative;">
+        <h1>Box Dev main Outer</h1>
+        <div class="box2" id="outer">
+            <h1>Box Dev 2 Outer</h1>
+            <div class="box3" id="inner">
+                <span>Boxes Inner </span>
+                <div class="boxes" id="a">
+                    A
+                </div>
+                <div class="boxes" id="b">
+                    B
+                </div>
+                <div class="boxes" id="c">
+                    C
+                </div>
+                <div class="boxes" id="d">
+                    D
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="btnAnimate">Animate</button>
+
+
+    <script>
+        $(document).ready(function () {
+
+            // target all parents of id c
+         //   $('#c').parents().css('background', 'aqua');
+                // target only parent of id c
+            $('#c').parent().css('background', 'red');
+         //   $('#inner').parents('#inner').css('background','green');
+
+         $('#inner').parentsUntil('#outer').css('background', 'green');
+         
+         //target position element id from parent of inner
+         $('#inner').offsetParent().css('background', 'green');
+
+         $('#inner').closest('li').css('background', 'green');
+        });
+    </script>
+</body>
+
+</html>

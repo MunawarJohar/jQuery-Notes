@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect Fadding Method in jQuery</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+        }
+        
+  
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1> Effect Fadding Method in jQuery</h1>
+    <div class="box" id="test1">
+        <h1>Box Dev</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia quasi expedita fssimus eum dolor. Iure adipisci voluptates esse cupiditate sunt nostrum! .
+        </p>
+
+    </div>
+
+    <button id="btnFadeOut">Fadeout</button>
+    <button id="btnFadeIn">FadeIn</button>
+    <button id="btnFadeToggle">FadeToggle</button>
+    <button id="btnFadeTo">FadeTo</button>
+    <script>
+        $(document).ready(function() {
+            $('#btnFadeOut').click(function() {
+                $('#test1').fadeOut();
+            })
+
+            $('#btnFadeIn').click(function() {
+
+                // callback function
+                $('#test1').fadeIn(500,function(){
+                    console.log("FadeIn using callback");
+                });
+            })
+            $('#btnFadeToggle').click(function() {
+                $('#test1').fadeToggle(3000);
+            })
+
+            $('#btnFadeTo').click(function() {
+                $('#test1').fadeTo(2000,0.2,function(){
+                    console.log("Fade to");
+                });
+            })
+
+
+        });
+    </script>
+</body>
+
+</html>

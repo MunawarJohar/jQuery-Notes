@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Chaining in jQuery</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+            position: relative;
+        }
+        
+  
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1> Method Chaining in jQuery</h1>
+    <div class="box" id="test1">
+        <h1>Box Dev</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia quasi expedita fssimus eum dolor. Iure adipisci voluptates esse cupiditate sunt nostrum! .
+        </p>
+
+    </div>
+    <button id="btnAnimate">Animate</button>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#btnAnimate').click(function() {
+                $('#test1').css('background','pink').slideUp(2000).slideDown(3000);
+            })
+        });
+    </script>
+</body>
+
+</html>

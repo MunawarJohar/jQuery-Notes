@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Method in jQuery</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+        }
+        
+  
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1> Sliding Method in jQuery</h1>
+    <div class="box" id="test1">
+        <h1>Box Dev</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quia quasi expedita fssimus eum dolor. Iure adipisci voluptates esse cupiditate sunt nostrum! .
+        </p>
+
+    </div>
+    <button id="btnSlideUp">SlideUp</button>
+    <button id="btnSlideDown">SlideDown</button>
+    <button id="btnSlideToggle">SlideToggle</button>
+
+    <script>
+        $(document).ready(function() {
+            $('#btnSlideDown').click(function() {
+                $('#test1').slideDown(2000);
+            })
+
+            $('#btnSlideUp').click(function() {
+                $('#test1').slideUp("slow");
+            })
+
+            $('#btnSlideToggle').click(function() {
+                $('#test1').slideToggle("fast");
+            })
+
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtering Methods in jQuery</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+        }
+
+
+        #test1 {
+            background-color: aqua;
+            border: 2px solid black;
+            overflow: auto;
+            padding: 10px 10px;
+            position: relative;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1> Filtering Methods in jQuery</h1>
+    <div class="box" id="test1">
+        <h1>Box 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam accusamus impedit voluptates molestias?
+            Aperiam eligendi rerum laborum necessitatibus tempore perferendis error, accusantium autem tenetur
+            recusandae repellendus quidem hic nobis aut ex? Eaque, consectetur.</p>
+    <p>para 2</p>
+        </div>
+
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Service</li>
+        <li>Blog</li>
+        <li>Contact</li>
+        <li>Feedbacks</li>
+    </ul>
+
+    <div class="box" id="second">
+        <h1>Box 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam accusamus impedit voluptates molestias?
+            Aperiam eligendi rerum laborum necessitatibus tempore perferendis error, accusantium autem tenetur
+            recusandae repellendus quidem hic nobis aut ex? Eaque, consectetur.</p>
+   
+            <p>para last</p>
+        </div>
+    <script>
+        $(document).ready(function () {
+            $('#test1 p').first().css('background','pink');
+            $('p').last().css('background','green');
+            $('ul li').last().css('background','green');
+
+            $('ul li').eq(3).css('background','aqua');
+            //target last paragraph
+            $('p').eq(-1).css('background','aqua');
+
+            // filter
+           //  $('p').not('#second').css('background','pink');
+
+           $('ul li').slice(1,3).css('background','red');
+
+        });
+    </script>
+</body>
+
+</html>
