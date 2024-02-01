@@ -25,3 +25,13 @@ Welcome to a transformative journey into the world of jQuery! 🌟 This comprehe
 Whether you're a beginner seeking a solid foundation or an experienced developer looking to enhance your toolkit, this jQuery course is your gateway to mastering the art of web development. Let's embark on this transformative journey together!
 
 🚀 [**Get Started Now**](https://github.com/MunawarJohar/jQuery-Notes)
+
+
+## How You Can Support:
+
+If you find my work inspiring or the code proves beneficial in your projects, your support means the world! 🌟 Show your appreciation with a star (✨) for this repository and, if you're feeling generous, consider buying me a coffee. Your support keeps the code flowing and the caffeine levels up!
+
+☕ [**Buy Me a Coffee**](https://www.buymeacoffee.com/munawarjohar)
+
+Let's code, learn, and grow together! Happy coding! 🎉
+
